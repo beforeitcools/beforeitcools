@@ -18,7 +18,13 @@ function App() {
             <Route path="localadvicepage" element={<LocalAdvicePage/>}/>
             <Route path="mappage" element={<MapPage/>}/>
             <Route path="chattingpage" element={<ChattingPage/>}/>
-            <Route path="mypage" element={<MyPage/>}/>
+            <Route path="mypage" element={<MyPage/>}>
+                <Route path="/localauth" element={<ChattingPage/>}/>
+                <Route path="/mytrip" element={<ChattingPage/>}/>
+                <Route path="/myfavorites" element={<ChattingPage/>}/>
+                <Route path="/mypost" element={<ChattingPage/>}/>
+                <Route path="/myadvice" element={<ChattingPage/>}/>
+            </Route>
 
           </Route>
         </Routes>

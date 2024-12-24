@@ -31,12 +31,10 @@ const Navbar = () => {
                     }>지도</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/chattingpage" style={({isActive})=>
+                    <NavLink to="/trippage" style={({isActive})=>
                         isActive? activateStyle : null
-                    }>채팅</NavLink>
+                    }>알림</NavLink>        // 알림은 NavLink 가 아닌 무언가로??
                 </li>
-                {/* 알림은 NavLink 가 아닌 무언가로?? */}
-                <li>알림</li>
                 <li>
                     <NavLink to="/mypage" style={({isActive})=>
                         isActive? activateStyle : null
