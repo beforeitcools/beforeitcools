@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import MyPageNavBar from "../../component/User/MyPageNavBar";
+import { Outlet } from "react-router-dom";
 
 
-const Menupage = () => {
+const MyPage = () => {
     const [menus, setMenus] = useState([]);
 
     useEffect(()=>{
-        fetch("https://www.beforeitcools.site:5555/menu/select")
+        fetch("https://www.beforeitcools.site:8082/user/mypage")
             .then(response=>{
                 console.log(response);
                 return response.json();
@@ -21,13 +23,10 @@ const Menupage = () => {
 
     return (
         <>
-            <h1>우리가 메뉴를 불러와서 보여줄 페이지</h1>
-            <ul>{menus.map(function(item, index){
-                return <li>{item.menuName} {item.menuPrice}</li>
-            })}
-            </ul>
+            <MyPageNavBar/>
+            <Outlet/>
         </>
     );
 };
 
-export default Menupage;
+export default MyPage;
