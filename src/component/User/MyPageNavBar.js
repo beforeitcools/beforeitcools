@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 const MyPageNavBar = () => {
     
     const activateStyle = {
@@ -11,7 +13,7 @@ const MyPageNavBar = () => {
                 <li>
                     <NavLink to="/mypage/localauth" style={({isActive})=>
                         isActive? activateStyle : null
-                    }>현지인 인등하기</NavLink>
+                    }>현지인 인증하기</NavLink>
                 </li>
                 <li>
                     <NavLink to="/mypage/mytrip" style={({isActive})=>
