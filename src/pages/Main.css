@@ -1,0 +1,105 @@
+main .section {
+  background-color: #fff;
+}
+main .section-banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+}
+main .section-banner .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+main .section-banner .text-wrap .btn-wrap {
+  margin-top: 70px;
+}
+main .section-banner .img-wrap {
+  margin-bottom: -170px;
+}
+main .section-collect {
+  background-color: transparent;
+  margin-top: 100vh;
+  position: relative;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+main .section-collect::before, main .section-collect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+main .section-collect::before {
+  top: -65px;
+  height: 670px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(234, 236, 198)), color-stop(70%, #2BC0E4));
+  background: linear-gradient(rgb(234, 236, 198) 0%, #2BC0E4 70%);
+  border-radius: 100px 100px 0 0;
+}
+main .section-collect::after {
+  left: 0;
+  bottom: 0;
+  height: 1047px;
+  background: #2BC0E4;
+}
+main .section-collect p {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 130px;
+}
+main .section-contents {
+  height: 3063px;
+  background: url("../../public/images/bg.jpg") no-repeat top center/cover;
+}
+main .section-contents .cont {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 200px;
+}
+main .section-contents .cont .text-wrap {
+  padding-top: 80px;
+}
+main .section-contents .cont .img-wrap.left {
+  position: relative;
+  z-index: 1;
+}
+main .section-contents .cont .img-wrap.right {
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+main .section-download {
+  padding: 120px 0;
+  text-align: center;
+}
+main .section-download p {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 55px;
+}
+main .section-download p strong {
+  font-weight: 700;
+}
+main .section-download .btn-wrap {
+  margin-top: 60px;
+}

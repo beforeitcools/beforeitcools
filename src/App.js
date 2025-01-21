@@ -6,6 +6,8 @@ import TripPage from "./pages/Trip/TripPage";
 import LocalAdvicePage from "./pages/LocalAdvice/LocalAdvicePage";
 import MapPage from "./pages/Map/MapPage";
 import ChattingPage from "./pages/Chatting/ChattingPage";
+import 'reset-css';
+import './Style.css';
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element={<Main/>}/>
-            <Route path="trippage" element={<TripPage/>}/>
+            {/* <Route path="trippage" element={<TripPage/>}/>
             <Route path="localadvicepage" element={<LocalAdvicePage/>}/>
             <Route path="mappage" element={<MapPage/>}/>
             <Route path="chattingpage" element={<ChattingPage/>}/>
@@ -24,7 +26,7 @@ function App() {
                 <Route path="myfavorites" element={<ChattingPage/>}/>
                 <Route path="mypost" element={<ChattingPage/>}/>
                 <Route path="myadvice" element={<ChattingPage/>}/>
-            </Route>
+            </Route> */}
 
           </Route>
         </Routes>

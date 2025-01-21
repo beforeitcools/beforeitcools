@@ -33,7 +33,8 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/trippage" style={({isActive})=>
                         isActive? activateStyle : null
-                    }>알림</NavLink>        // 알림은 NavLink 가 아닌 무언가로??
+                    }>알림</NavLink>        
+                    {/* // 알림은 NavLink 가 아닌 무언가로?? */}
                 </li>
                 <li>
                     <NavLink to="/mypage" style={({isActive})=>

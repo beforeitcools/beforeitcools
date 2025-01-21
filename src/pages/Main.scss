@@ -1,0 +1,103 @@
+@import '../Common';
+main {
+    .section {
+        background-color: #fff;
+        &-banner {
+            position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+            height: 100vh;
+            .inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+            }
+            .text-wrap {
+                .btn-wrap {
+                    margin-top: 70px;
+                }
+            }
+            .img-wrap {
+                margin-bottom: -170px;
+            }
+        }
+        &-collect {
+            background-color: transparent;
+            margin-top: 100vh;
+            position: relative;
+            text-align: center;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: -1;
+            }
+            &::before {
+                top: -65px;
+                height: 670px;
+                background: linear-gradient(rgba(234, 236, 198, 1) 0%, $pointBlueColor 70%);
+                border-radius: 100px 100px 0 0;
+            }
+            &::after {
+                left: 0;
+                bottom: 0;
+                height: 1047px;
+                background: $pointBlueColor;
+            }
+            
+            p {
+                color: #fff;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 70px;
+                margin-bottom: 130px;
+            }
+        }
+        &-contents {
+            height: 3063px;
+            background: url("../../public/images/bg.jpg") no-repeat top center / cover;
+            .cont {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 200px;
+                .text-wrap {
+                    padding-top: 80px;
+                }
+                .img-wrap{
+                    &.left {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    &.right {
+                        position: absolute;
+                        right: 0;
+                        top: 200px;
+                    
+                    }
+                }
+            }
+        }
+        &-download {
+            padding: 120px 0;
+            text-align: center;
+            p {
+                margin-top: 30px;
+                font-size: 32px;
+                line-height: 55px;
+                strong {
+                    font-weight: 700;
+                }
+            }
+            .btn-wrap {
+                margin-top: 60px;
+            }
+        }
+    }
+}

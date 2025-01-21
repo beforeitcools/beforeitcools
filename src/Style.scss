@@ -1,0 +1,54 @@
+@import './Common';
+@import './component/Common/Header';
+@import './component/Common/Footer';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Noto Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $blackColor;
+    font-size: 1rem;
+}
+
+.inner {
+    width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    background: none;
+    font-family: "Noto Sans KR", serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sec-title {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+.sec-desc {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.sub-tit {
+    color:$pointBlueColor;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}

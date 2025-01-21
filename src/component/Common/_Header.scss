@@ -1,0 +1,28 @@
+@import '../../Common';
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    z-index: 999;
+    .inner {
+        display: flex;;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            color: #fff;
+            background: $pointBlueColor;
+            border-radius: 6px;
+            width: 110px;
+            height: 40px;
+            font-weight: 600;
+        }
+    }
+    &.active {
+        background: #fff;
+        
+    }
+}
